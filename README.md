@@ -1,6 +1,20 @@
 # PiMasterized
 A openrsd plugin that adds some modules to openrsd
 
+## How to install
+
+* Go to openrsd folder  
+* Create/open the file loadPlugins.php  
+* Add the following line:  
+
+> &lt;?php  
+> addPlugin("PiMasterized");  
+> ?&gt;  
+
+* Go to openrsd/Plugins
+* execute 
+> git clone https://github.com/Racass/PiMasterized.git  
+
 ## Modules
 
 - [ ] New method of plugin installation - A way to automate plugin installation via browser  
