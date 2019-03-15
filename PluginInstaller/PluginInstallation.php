@@ -24,11 +24,6 @@ class PluginInstallation extends Plugin
                         '<script>function SubmitFormData() {
                             var gitClone = $("#gitClone").val();
                             $.post("/openrsd/plugins/PiMasterized/PluginInstaller/install.php", { gitClone: gitClone },
-                            function(data) {
-                             $(\'#results\').html(data);
-                             $(\'#myForm\')[0].reset();
-                            });
-
                         }</script>';
                 echo $page;
             }
