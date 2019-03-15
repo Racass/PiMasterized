@@ -12,9 +12,16 @@
             return true;
         }
         
+        public function onPageLoad($sess, &$post)
+        {
+            echo '<!-- teste carrega pagina -->';
+            return true;
+        }
+
         public function onDashboardEnd($sess)
         {
             $myDashBoard = new dashBoard();
+            echo '<!-- teste PiMasterizedPlugin -->';
             return $myDashBoard->onDashboardEnd($sess);
         }
     }
