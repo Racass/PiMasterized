@@ -22,12 +22,9 @@ class PluginInstallation extends Plugin
                         </form>';
                 echo $page;
             }
-            $page = "<h3>Plugin being installed!</h3><br>";
-                $page .= '<br><a>sess: '.$sess.'</a><a>post: '.$post['page'].'</a>';
-                $page .= '<br><a>sess: '.array_values($sess).'</a><a>post: '.array_values($post).'</a>';
-                echo $page;
-            if($post['page'] == "install")
+            if(strpos($post['page'], "install?gitUrl=")  !== false)
             {
+                $page = "<h3>Plugin being installed!</h3><br>";
                 echo '<!-- ALELUIA -->';
             }
             return true;
