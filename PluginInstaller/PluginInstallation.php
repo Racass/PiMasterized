@@ -16,15 +16,16 @@ class PluginInstallation extends Plugin
             if($post['page'] == "PluginInstallation")
             {
                 $page = "<h3>Install your plugins the easy way!</h3><br>";
-                $page .= '
-                        <form method="post" action="" class="form-group">
+                $page .= '<form method="post" action="/install.php" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
-                            <button  class="btn btn-primary" onclick="SubmitFormData();" id="submit">Instalar</button>
-                        </form>'.
-                        '<script>function SubmitFormData() {
-                            var gitClone = $("#gitClone").val();
-                            $.post("/openrsd/plugins/PiMasterized/PluginInstaller/install.php", { gitClone: gitClone },
-                        }</script>';
+                            <button  class="btn btn-primary" onclick=";" id="submit">Instalar</button>
+                        </form>';
+                echo $page;
+            }
+            if($post['page'] == "install")
+            {
+                $page = "<h3>Plugin being installed!</h3><br>";
+                $page .= '<br><a>sess: '.$sess.'</a><a>post: '.$post.'</a>';
                 echo $page;
             }
             return true;
