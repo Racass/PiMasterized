@@ -13,7 +13,7 @@ class PluginInstallation extends Plugin
         public function onCustomPage($sess, &$post)
         {
             //Be careful not to override system pages.
-            if($post['page'] == "Plugin Installation")
+            if($post['page'] == "PluginInstallation")
             {
                 echo "<h3>This is an example custom page!</h3>";
             }

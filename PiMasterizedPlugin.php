@@ -24,6 +24,11 @@
             $myDashBoard = new dashBoard();
             return $myDashBoard->onDashboardEnd($sess);
         }
+        public function onCustomPageLinks($sess)
+        {
+            echo '<li><a href="#" onclick="pageLoad(\'PluginInstallation\');"><i class="fa fa-check"></i> Plugin Installation</a></li>';
+            return true;
+        }
         public function onCustomPage($sess,&$post)
         {
             $pluginInst = new PluginInstallation();
