@@ -17,7 +17,7 @@ class PluginInstallation extends Plugin
             {
                 $page = "<h3>Install your plugins the easy way!</h3><br>";
                 $page .= '
-                        <form method="post" action="/plugins/PiMasterized/PluginInstaller/install.php" class="form-group">
+                        <form method="post" action="/openrsd/plugins/PiMasterized/PluginInstaller/install.php" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
                             <button  class="btn btn-primary" type="submit">Instalar</button>
                         </form>';
