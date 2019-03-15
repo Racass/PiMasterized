@@ -17,9 +17,9 @@ class PluginInstallation extends Plugin
             {
                 $page = "<h3>Install your plugins the easy way!</h3><br>";
                 $page .= '
-                        <form action="/install.php" class="form-group">
+                        <form action="/plugins/PiMasterized/install.php" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
-                            <input type="submit" value="Submit">
+                            <button  class="btn btn-primary" type="submit">Instalar</button>
                         </form>';
                 echo $page;
             }
