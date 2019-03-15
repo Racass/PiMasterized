@@ -24,7 +24,7 @@
             $myDashBoard = new dashBoard();
             return $myDashBoard->onDashboardEnd($sess);
         }
-        public function onCustomPageLinks($sess)
+        /*public function onCustomPageLinks($sess)
         {
             echo '<li><a href="#" onclick="pageLoad(\'PluginInstallation\');"><i class="fa fa-arrow-up"></i> Plugin Installation</a></li>';
             return true;
@@ -33,6 +33,6 @@
         {
             $pluginInst = new PluginInstallation();
             return $pluginInst->onCustomPage($sess, $post);
-        }
+        }*/
     }
 ?>
