@@ -1,5 +1,7 @@
 <?php
     require 'dashBoard.php';
+    require 'PluginInstallation.php';
+
     class PiMasterizedPlugin extends Plugin
     {
         public function __construct(){
@@ -21,6 +23,11 @@
         {
             $myDashBoard = new dashBoard();
             return $myDashBoard->onDashboardEnd($sess);
+        }
+        public function onCustomPage($sess,&$post)
+        {
+            $pluginInst = new PluginInstallation();
+            return $pluginInst->onCustomPage($sess, &$post);
         }
     }
 ?>
