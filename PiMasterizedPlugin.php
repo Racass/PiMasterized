@@ -27,7 +27,7 @@
         public function onCustomPage($sess,&$post)
         {
             $pluginInst = new PluginInstallation();
-            return $pluginInst->onCustomPage($sess, &$post);
+            return $pluginInst->onCustomPage($sess, $post);
         }
     }
 ?>
