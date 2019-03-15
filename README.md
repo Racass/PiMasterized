@@ -1,6 +1,5 @@
 # PiMasterized
-A openrsd plugin that adds some modules to openrsd
-
+A openrsd plugin that adds some modules to [openrsd](https://github.com/mitchellurgero/openrsd).
 ## How to install
 
 * Go to openrsd folder  
