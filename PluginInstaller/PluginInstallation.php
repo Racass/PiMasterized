@@ -24,7 +24,9 @@ class PluginInstallation extends Plugin
             }
             if(strpos($post['page'], "install?gitUrl=")  !== false)
             {
-                $page = "<h3>Plugin being installed!</h3><br>";
+                $page = "<h3>Plugin being installed. Please Wait.</h3><br>";
+                $gitUrl = substr($post['page'], 15);
+                $page .= '<br><a>'.$gitUrl.'</a>';
                 echo $page;
             }
             return true;
