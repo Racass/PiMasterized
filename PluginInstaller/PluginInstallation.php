@@ -19,7 +19,7 @@ class PluginInstallation extends Plugin
                 $page .= '
                         <form method="post" action="" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
-                            <button  class="btn btn-primary" type="submit">Instalar</button>
+                            <button  class="btn btn-primary" onclick="SubmitFormData();" id="submit">Instalar</button>
                         </form>'.
                         '<script>function SubmitFormData() {
                             var gitClone = $("#gitClone").val();
