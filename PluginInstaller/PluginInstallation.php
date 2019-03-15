@@ -18,7 +18,7 @@ class PluginInstallation extends Plugin
                 $page = "<h3>Install your plugins the easy way!</h3><br>";
                 $page .= '<form method="post" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
-                            <button onclick="pageLoad(\'install?gitUrl=$(\'gitCloneURL\').val()\');" class="btn btn-primary" onclick=";" id="submit">Instalar</button>
+                            <button onclick="pageLoad(\'install?gitUrl=$(\'gitCloneURL\').val())\');" class="btn btn-primary" onclick=";" id="submit">Instalar</button>
                         </form>';
                 echo $page;
             }
