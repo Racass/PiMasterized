@@ -55,7 +55,6 @@ class dashBoard extends Plugin
                     </div>
                     </div>
                 </div>';
-            echo '<!-- teste -->';
             return true;
         }
     }
