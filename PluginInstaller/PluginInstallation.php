@@ -16,7 +16,7 @@ class PluginInstallation extends Plugin
             if($post['page'] == "PluginInstallation")
             {
                 $page = "<h3>Install your plugins the easy way!</h3><br>";
-                $page .= '<form method="post" action="/install.php" class="form-group">
+                $page .= '<form method="post" action="install" class="form-group">
                             <label for="gitCloneURL">Git Clone URL</label> <input placeholder="Enter the git URL" class="form-control" type="text" name="gitClone" id="gitCloneURL" value=""><br>
                             <button  class="btn btn-primary" onclick=";" id="submit">Instalar</button>
                         </form>';
