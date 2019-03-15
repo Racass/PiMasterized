@@ -1,6 +1,6 @@
 <?php
     require 'dashBoard.php';
-    require 'PluginInstaller\PluginInstallation.php';
+    require 'PluginInstaller/PluginInstallation.php';
 
     class PiMasterizedPlugin extends Plugin
     {
