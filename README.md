@@ -11,7 +11,7 @@ A openrsd plugin that adds some modules to openrsd
 > addPlugin("PiMasterized");  
 > ?&gt;  
 
-* Go to openrsd/Plugins
+* Go to openrsd/plugins
 * execute 
 > git clone https://github.com/Racass/PiMasterized.git  
 
