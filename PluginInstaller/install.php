@@ -1,3 +1,3 @@
 <?php
-    echo 'post: '.$_POST;
+    echo 'post: '.$_POST["gitClone"];
 ?>
