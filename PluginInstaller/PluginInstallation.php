@@ -29,8 +29,6 @@ class PluginInstallation extends Plugin
                 $page .= '<br><a>'.$gitUrl.'</a>';
                 $myfile = fopen("var/www/html/openrsd/loadPlugins.php", "w+") or die("Unable to open file!");
                 $beforeTxt = fread($myfile, filesize("var/www/html/openrsd/loadPlugins.php"));
-                
-                $newPlugin = 
                 //shell_exec('');
                 echo $page;
             }
